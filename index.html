@@ -1,176 +1,128 @@
+<!DOCTYPE html>  <html lang="bn" class="scroll-smooth">  
+<head>  
+    <meta charset="UTF-8">  
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">  
+    <title>MD. FARID RANA | Development + Penetration Testing</title>  
+    <meta name="description" content="Official personal profile of MD. FARID RANA from Gazipur, Bangladesh.">  
+    <meta name="author" content="MD. FARID RANA">  <!-- Tailwind CSS CDN -->  
+<script src="https://cdn.tailwindcss.com"></script>  
+<script>  
+    tailwind.config = {  
+        theme: {  
+            extend: {  
+                colors: {  
+                    blackBg: '#000000',  
+                    cardBg: '#080808',  
+                    gold: '#d4af37',  
+                    cyanGlow: '#00e5ff',  
+                },  
+                fontFamily: {  
+                    sans: ['"Inter"', 'sans-serif'],  
+                    mono: ['"Fira Code"', 'monospace']  
+                }  
+            }  
+        }  
+    }  
+</script>  
 
-<!DOCTYPE html>
-<html lang="en">
-<head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<!-- FontAwesome & Google Fonts -->  
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">  
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Fira+Code:wght@400;500;600&display=swap" rel="stylesheet">  
 
-<title>MD. FARID RANA | Cyber Security</title>
-<meta name="description" content="Official personal portfolio of MD. FARID RANA, an aspiring Cyber Security Researcher from Gazipur, Bangladesh.">
-<meta name="author" content="MD. FARID RANA">
-<meta name="robots" content="index, follow">
+<style>  
+    body {  
+        background-color: #000000;  
+        color: #e5e5e5;  
+        font-family: 'Inter', sans-serif;  
+    }  
 
-<link rel="canonical" href="https://rshsjssbsvss.github.io/">
-
-<meta property="og:title" content="MD. FARID RANA">
-<meta property="og:description" content="Cyber Security | Linux | Ethical Hacking">
-<meta property="og:type" content="profile">
-<meta property="og:url" content="https://rshsjssbsvss.github.io/">
-
-<script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@type": "Person",
-  "name": "MD. FARID RANA",
-  "url": "https://rshsjssbsvss.github.io/",
-  "description": "Aspiring Cyber Security Researcher from Gazipur, Bangladesh.",
-  "sameAs": [
-    "https://github.com/Rshsjssbsvss"
-  ],
-  "knowsAbout": [
-    "Cyber Security",
-    "Linux",
-    "Ethical Hacking",
-    "Android Development",
-    "Software Development"
-  ]
-}
-</script>
-
-<style>
-*{margin:0;padding:0;box-sizing:border-box}
-body{
- background:#0b1210;
- color:#e7eee9;
- font-family:Arial,sans-serif;
- line-height:1.7;
-}
-header{
- padding:22px 8%;
- border-bottom:1px solid #26352e;
- display:flex;
- justify-content:space-between;
- flex-wrap:wrap;
-}
-.logo{color:#ffb454;font-weight:bold}
-nav a{color:#aaa;text-decoration:none;margin-left:15px}
-.hero{
- min-height:75vh;
- display:flex;
- flex-direction:column;
- justify-content:center;
- align-items:center;
- text-align:center;
- padding:40px 20px;
-}
-.avatar{
- width:100px;height:100px;
- border-radius:50%;
- background:#203a30;
- display:grid;place-items:center;
- font-size:35px;color:#ffb454;
- border:2px solid #ffb454;
- margin-bottom:20px;
-}
-h1{font-size:clamp(30px,6vw,52px)}
-h1 span{color:#ffb454}
-.subtitle{color:#ffb454;margin:10px}
-p{color:#aab8b0}
-.btn{
- display:inline-block;
- margin:20px 5px;
- padding:10px 20px;
- background:#ffb454;
- color:#101510;
- border-radius:6px;
- text-decoration:none;
- font-weight:bold;
-}
-section{
- max-width:850px;
- margin:auto;
- padding:45px 22px;
-}
-h2{color:#ffb454;margin-bottom:15px}
-.card{
- background:#111d18;
- padding:22px;
- border:1px solid #26382f;
- border-radius:10px;
- margin-top:12px;
-}
-footer{
- text-align:center;
- padding:30px;
- border-top:1px solid #26352e;
- color:#88968e;
-}
-a{color:#ffb454}
+    /* Pure Black Glass Card Styling */  
+    .card-dark {  
+        background-color: #080808;  
+        border: 1px solid #1a1a1a;  
+        transition: all 0.3s ease;  
+    }  
+    .card-dark:hover {  
+        border-color: rgba(212, 175, 55, 0.4);  
+        box-shadow: 0 0 25px -5px rgba(212, 175, 55, 0.15);  
+    }  
 </style>
-</head>
 
-<body>
+</head>  
+<body class="bg-blackBg text-gray-200 antialiased min-h-screen flex flex-col justify-between selection:bg-gold selection:text-black">  <!-- Header Logo -->  
+<header class="px-6 lg:px-12 py-6 border-b border-zinc-900/60">  
+    <div class="max-w-4xl mx-auto flex items-center justify-between">  
+        <div class="flex items-center gap-2">  
+            <span class="w-2.5 h-2.5 rounded-full bg-gold animate-pulse"></span>  
+            <span class="font-mono text-sm font-bold tracking-widest text-white">FARID RANA</span>  
+        </div>  
+        <span class="text-xs font-mono text-zinc-600">Gazipur, BD</span>  
+    </div>  
+</header>  
 
-<header>
-<div class="logo">MD.FARID RANA</div>
-<nav>
-<a href="#about">About</a>
-<a href="#skills">Skills</a>
-<a href="#projects">Projects</a>
-</nav>
-</header>
+<!-- Main Container -->  
+<main class="max-w-4xl mx-auto px-6 w-full py-12 flex-1 flex items-center justify-center">  
 
-<div class="hero">
-<div class="avatar">FR</div>
-<h1>MD. <span>FARID RANA</span></h1>
-<div class="subtitle">Aspiring Cyber Security Researcher</div>
-<p>Gazipur, Bangladesh</p>
-<p>Learning • Exploring • Building • Innovating</p>
-<a class="btn" href="#about">Explore My Profile</a>
-<a class="btn" href="https://github.com/Rshsjssbsvss">GitHub Profile</a>
-</div>
+    <!-- Minimal Profile Card -->  
+    <div class="card-dark w-full p-8 sm:p-12 rounded-3xl relative overflow-hidden">  
+          
+        <div class="flex flex-col-reverse md:flex-row items-center md:items-start justify-between gap-8">  
+              
+            <!-- Left Content -->  
+            <div class="space-y-6 text-center md:text-left flex-1">  
+                  
+                <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-zinc-950 border border-zinc-800 text-gold text-xs font-mono">  
+                    <i class="fa-solid fa-terminal text-[10px]"></i> VOID SOCIETY  
+                </div>  
 
-<section id="about">
-<h2>About Me</h2>
-<div class="card">
-<p>
-Hello! I am MD. FARID RANA from Gazipur, Bangladesh.
-I am passionate about technology, Cyber Security,
-Linux systems, Ethical Hacking and Software Development.
-</p>
-<p>
-My dream is to become a skilled professional in
-Cyber Security and contribute to a safer digital world.
-I believe in continuous learning, practical experience
-and responsible security research.
-</p>
-</div>
-</section>
+                <div>  
+                    <h1 class="text-3xl sm:text-5xl font-extrabold text-white tracking-tight">  
+                        MD. FARID RANA  
+                    </h1>  
+                    <p class="text-lg sm:text-2xl font-mono text-gold mt-3 font-semibold tracking-wide">  
+                        Development + Penetration Testing  
+                    </p>  
+                </div>  
 
-<section id="skills">
-<h2>Areas of Interest</h2>
-<div class="card">
-<p>Cyber Security & Ethical Hacking</p>
-<p>Kali Linux & Linux Systems</p>
-<p>Android Application Development</p>
-<p>Software Engineering</p>
-<p>Artificial Intelligence</p>
-</div>
-</section>
+                <p class="text-gray-400 text-sm max-w-md leading-relaxed font-light">  
+                    Exploring software architectures, Linux kernel mechanisms, and proactive cyber security research.  
+                </p>  
 
-<section id="projects">
-<h2>My Projects</h2>
-<div class="card">
-<p>My software and research projects will be showcased here.</p>
-<a href="https://github.com/Rshsjssbsvss">Explore GitHub →</a>
-</div>
-</section>
+                <div class="pt-2 flex items-center justify-center md:justify-start gap-4 text-xs font-mono text-zinc-500">  
+                    <span class="flex items-center gap-1.5">  
+                        <i class="fa-solid fa-location-dot text-gold"></i> Gazipur, Bangladesh  
+                    </span>  
+                    <span>•</span>  
+                    <span class="flex items-center gap-1.5 text-zinc-400">  
+                        <i class="fa-solid fa-shield-halved text-cyanGlow"></i> Security Research  
+                    </span>  
+                </div>  
 
-<footer>
-<p>© 2026 MD. FARID RANA</p>
-<p>Gazipur, Bangladesh</p>
-<p>Built with passion for technology.</p>
+            </div>  
+
+            <!-- Right Profile Picture (Local profile.jpg) -->  
+            <div class="flex-shrink-0 relative group">  
+                <div class="w-36 h-36 sm:w-44 sm:h-44 rounded-2xl p-1 bg-gradient-to-b from-gold via-zinc-800 to-black overflow-hidden shadow-2xl">  
+                    <img src="profile.jpg"   
+                         alt="MD. FARID RANA"   
+                         onerror="this.onerror=null; this.src='https://placehold.co/400x400/080808/d4af37?text=FARID+RANA';"  
+                         class="w-full h-full object-cover rounded-xl grayscale group-hover:grayscale-0 transition duration-500">  
+                </div>  
+                <div class="absolute -bottom-2 -right-2 px-2.5 py-0.5 bg-black border border-gold/40 rounded text-[10px] font-mono text-gold">  
+                    Mr. Hacker  
+                </div>  
+            </div>  
+
+        </div>  
+
+    </div>  
+
+</main>  
+
+<!-- Simple Pure Black Footer -->  
+<footer class="py-6 bg-black border-t border-zinc-900/60 text-center text-xs text-zinc-600 font-mono">  
+    © 2026 MD. FARID RANA  
 </footer>
 
-</body>
-</html>
+</body>  
+</html> 
